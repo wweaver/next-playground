@@ -2,7 +2,7 @@ export function Test(props) {
     return JSON.stringify(props)
 }
 
-export function getStaticProps() {
+export function getStaticProps(context) {
     return {
         props: {a: 1}
     };

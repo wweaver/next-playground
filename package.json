@@ -3,10 +3,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "preinstall": "npx only-allow npm"
   },
   "dependencies": {
-    "next": "latest",
+    "next": "^12.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
