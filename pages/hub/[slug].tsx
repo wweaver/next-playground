@@ -1,5 +1,5 @@
 export function Test(props) {
-    console.log(props);
+    console.log('page component', props);
     return JSON.stringify(props)
 }
 
@@ -14,9 +14,10 @@ export const getStaticPaths = async () => {
 
 
 export function getStaticProps(context) {
-    console.log(context);
+    console.log('getStaticProps', context);
     return {
-        props: {slug: context.params.slug}
+        props: {slug: context.params.slug},
+        revalidate: 30,
     };
 }
 
